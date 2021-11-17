@@ -17,11 +17,14 @@
 
     increment = this.makeIncrementer(1);
 
+    decrement = this.makeIncrementer(-1);
+
     render() {
       return (
         <div>
           <p>Count: {this.state.count}</p>
-          <button className="increment" onClick={this.increment}>Increment count</button>
+          <button className="increment" onClick={this.increment}>Increment</button>
+          <button className="decrement" onClick={this.decrement}>Decrement</button>
         </div>
       )
     }
